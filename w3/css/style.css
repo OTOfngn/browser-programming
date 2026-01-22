@@ -11,7 +11,8 @@ body {
     background-size: cover; */
 }
 
-header, footer {
+header,
+footer {
     background-color: #4682b4;
     text-align: center;
     padding: 5px;
@@ -49,7 +50,7 @@ nav ul {
 
 nav li {
     display: inline;
-    
+
     margin-right: 15px;
 }
 

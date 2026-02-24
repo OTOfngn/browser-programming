@@ -17,6 +17,10 @@ btn1.addEventListener("click", function () {
 const btnTheme = document.getElementById("btnTheme");
 const body = document.body;
 
+if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-theme");
+}
+
 btnTheme.addEventListener("click", function () {
     if (body.classList.contains("dark-theme")) {
         body.classList.remove("dark-theme");

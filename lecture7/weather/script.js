@@ -28,9 +28,12 @@ async function loadWeather() {
         const data = await response.json()
         console.log(data)
 
-        cityText.textContent = data.timezone
-        temperatureText.textContent = data.current.temperature_2m + " " + data.current_units.temperature_2m
-        windText.textContent = data.current.wind_speed_10m + " " + data.current_units.wind_speed_10m
+        const temp = data.current.temperature_2m
+        const wind = data.current.wind_speed_10m
+
+        cityText.textContent = "Kuopio"
+        temperatureText.textContent = temp + " °C"
+        windText.textContent = wind + " km/h"
 
     } catch (error) {
         log("Error: " + error)

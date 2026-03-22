@@ -40,8 +40,6 @@ async function loadWeather() {
         log(`Wind speed: ${wind} km/h`)
 
     } catch (error) {
-        log("Error: " + error)
+        log("Error: " + error.message)
     }
-
-    // TODO: fetch data from API
 }

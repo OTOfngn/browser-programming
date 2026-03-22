@@ -35,6 +35,10 @@ async function loadWeather() {
         temperatureText.textContent = temp + " °C"
         windText.textContent = wind + " km/h"
 
+        log(`City: Kuopio`)
+        log(`Temperature: ${temp} °C`)
+        log(`Wind speed: ${wind} km/h`)
+
     } catch (error) {
         log("Error: " + error)
     }
